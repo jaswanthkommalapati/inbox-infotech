@@ -1,0 +1,1262 @@
+
+<html>
+<head>
+<link rel="stylesheet" href="inbox infotech.css">
+<style type="text/css"src="inbox infotech.css">
+* {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 10px;
+  cursor: default;
+  scroll-behavior: smooth;
+}
+
+body {
+  font: 1.6rem "Titillium Web", sans-serif;
+  color: #fff;
+  margin: 0;
+  text-align: center;
+}
+
+section {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+a,
+a:link,
+a:visited {
+  color: #fff;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+  text-decoration: none;
+}
+
+header {
+  background: #87509c;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+p {
+  margin: 0;
+}
+
+footer {
+  background: #344b8e;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 4.2rem;
+  text-transform: none;
+}
+
+h2 {
+  font-size: 4rem;
+  letter-spacing: 3px;
+}
+
+h3 {
+  font-size: 2.4rem;
+  letter-spacing: 1px;
+}
+
+input,
+textarea {
+  padding: 2rem;
+  background: #273a71;
+  border: 0;
+  border-radius: 5px;
+  color: #fff;
+  font: 1.6rem "Titillium Web", sans-serif;
+  width: 100%;
+}
+
+textarea {
+  height: 20rem;
+  resize: vertical;
+}
+
+::-webkit-input-placeholder {
+  font: 1.6rem "Titillium Web", sans-serif;
+  color: #fff;
+}
+
+:-ms-input-placeholder {
+  font: 1.6rem "Titillium Web", sans-serif;
+  color: #fff;
+}
+
+::-ms-input-placeholder {
+  font: 1.6rem "Titillium Web", sans-serif;
+  color: #fff;
+}
+
+::placeholder {
+  font: 1.6rem "Titillium Web", sans-serif;
+  color: #fff;
+}
+
+@font-face {
+  font-family: "Titillium Web";
+  font-style: normal;
+  font-weight: 300;
+  src: url("https://cuda.iamdanial.com/assets/fonts/TitilliumWeb-Light.ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Titillium Web";
+  font-style: normal;
+  font-weight: 400;
+  src: url("https://cuda.iamdanial.com/assets/fonts/TitilliumWeb-Regular.ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Titillium Web";
+  font-style: italic;
+  font-weight: 400;
+  src: url("https://cuda.iamdanial.com/assets/fonts/TitilliumWeb-Italic.ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Titillium Web";
+  font-style: normal;
+  font-weight: 600;
+  src: url("https://cuda.iamdanial.com/assets/fonts/TitilliumWeb-SemiBold.ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Titillium Web";
+  font-style: normal;
+  font-weight: 700;
+  src: url("https://cuda.iamdanial.com/assets/fonts/TitilliumWeb-Bold.ttf");
+  font-display: swap;
+}
+
+button {
+  border: 0;
+  color: #fff;
+  font: 600 1.8rem "Titillium Web", sans-serif;
+  width: 30rem;
+  height: 7rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 5px;
+  -webkit-box-shadow: inset 0 -5px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 -5px 0 rgba(0, 0, 0, 0.2);
+  -ms-flex-item-align: center;
+  align-self: center;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+
+.button-orange {
+  background: #eb7e4c;
+}
+
+.button-orange:focus,
+.button-orange:hover {
+  background: #e96e35;
+}
+
+.button-orange:active {
+  background: #e65d1e;
+}
+
+.button-aqua-blue {
+  background: #30bae7;
+  margin: 3rem auto auto auto;
+}
+
+.button-aqua-blue:focus,
+.button-aqua-blue:hover {
+  background: #1bb2e4;
+}
+
+.button-aqua-blue:active {
+  background: #18a0cd;
+}
+
+.button-green {
+  background: #17c2a4;
+}
+
+.button-green:focus,
+.button-green:hover {
+  background: #14ad91;
+}
+
+.button-green:active {
+  background: #12977e;
+}
+
+.services {
+  background: #17c2a4;
+}
+
+.service-item-info-container {
+  margin-top: 5rem;
+}
+
+.service-item-info {
+  margin-top: 1rem;
+  font-weight: 300;
+}
+
+.team {
+  background: #e7f1f8;
+  color: #3c4761;
+}
+
+.team-member {
+  gap: 4rem;
+}
+
+.team-member-role {
+  color: #30bae7;
+}
+
+.team-member-bio {
+  margin-top: 3rem;
+}
+
+.team-member-intro {
+  margin: 2rem 0;
+  font-weight: 300;
+}
+
+.skills {
+  color: #3c4761;
+}
+
+.skill-title {
+  margin-top: 2rem;
+}
+
+.skill-circle {
+  position: relative;
+  font-size: 16rem;
+  width: 1em;
+  height: 1em;
+  border-radius: 10rem;
+  background-color: #dfe8ed;
+  margin: auto;
+}
+
+.skill-circle::after {
+  position: absolute;
+  top: 0.09em;
+  left: 0.09em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  content: "";
+  border-radius: 10rem;
+  background-color: #fff;
+  width: 0.82em;
+  height: 0.82em;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+
+.skill-circle *,
+.skill-circle *::before,
+.skill-circle *::after {
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+.skill-circle > span {
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  line-height: 5em;
+  font-size: 0.2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+
+.skill-circle:hover > span {
+  line-height: 3.33em;
+  font-size: 0.3em;
+}
+
+.skill-circle:hover::after {
+  top: 0.07em;
+  left: 0.07em;
+  width: 0.86em;
+  height: 0.86em;
+}
+
+.skill-circle .bar,
+.skill-circle.p70 .fill,
+.skill-circle.p75 .fill,
+.skill-circle.p85 .fill,
+.skill-circle.p90 .fill {
+  position: absolute;
+  border: 0.09em solid;
+  width: 0.82em;
+  height: 0.82em;
+  clip: rect(0em, 0.5em, 1em, 0em);
+  border-radius: 10rem;
+}
+
+.skill-circle.p70 .bar::after,
+.skill-circle.p70 .fill,
+.skill-circle.p75 .bar::after,
+.skill-circle.p75 .fill,
+.skill-circle.p85 .bar::after,
+.skill-circle.p85 .fill,
+.skill-circle.p90 .bar::after,
+.skill-circle.p90 .fill {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.p70 .bar {
+  -webkit-transform: rotate(252deg);
+  transform: rotate(252deg);
+}
+
+.p75 .bar {
+  -webkit-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+
+.p85 .bar {
+  -webkit-transform: rotate(306deg);
+  transform: rotate(306deg);
+}
+
+.p90 .bar {
+  -webkit-transform: rotate(324deg);
+  transform: rotate(324deg);
+}
+
+.skill-circle.p-blue .bar,
+.skill-circle.p-blue .fill {
+  border-color: #30bae7;
+}
+
+.skill-circle.p-pink .bar,
+.skill-circle.p-pink .fill {
+  border-color: #d74680;
+}
+
+.skill-circle.p-green .bar,
+.skill-circle.p-green .fill {
+  border-color: #17c2a4;
+}
+
+.skill-circle.p-orange .bar,
+.skill-circle.p-orange .fill {
+  border-color: #eb7e4c;
+}
+
+.portfolio {
+  background: #ffdd99;
+  color: #393939;
+}
+
+.portfolio-item-info {
+  margin-top: 2rem;
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.tabs {
+  margin-bottom: 5rem;
+}
+
+.tab {
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 0.5rem 2.5rem;
+  border-radius: 5px;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+  background: #ebc985;
+}
+
+.tab:focus,
+.tab:hover,
+.tab:active {
+  background: #fff;
+}
+
+.tab-active {
+  background: #fff;
+}
+
+.tab-content {
+  display: none;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  -webkit-animation: scaleUp 300ms ease-in-out;
+  animation: scaleUp 300ms ease-in-out;
+}
+
+.tab-content-active {
+  display: grid;
+}
+
+@-webkit-keyframes scaleUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes scaleUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+.testimonials {
+  background: #d74680;
+}
+
+.grid-testimonials {
+  gap: 13rem 10rem;
+  text-align: left;
+}
+
+.testimonial {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 2rem;
+}
+
+.testimonial-person-quote {
+  font-style: italic;
+  font-size: 2rem;
+}
+
+.testimonial-person-role {
+  font-size: 1.8rem;
+  color: #ffdd99;
+}
+
+.content-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column wrap;
+  flex-flow: column wrap;
+  gap: 8rem;
+  max-width: 1140px;
+  margin: auto;
+}
+
+.section-intro {
+  margin-top: 2rem;
+  font-size: 1.8rem;
+}
+
+.header {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.link-nav {
+  text-transform: uppercase;
+  padding: 0.5rem 2rem;
+}
+
+.link-nav:hover {
+  background: #643a79;
+  border-radius: 5px;
+}
+
+.footer {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.link-footer {
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+
+.link-footer:hover {
+  color: #30bae7;
+}
+
+.grid-col1 {
+  grid-template-columns: auto;
+}
+
+.grid-col2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid-col4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5rem;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.hero {
+  background: #87509c;
+  color: #f7f3ea;
+}
+
+.contact {
+  background: #3c5499;
+}
+
+.grid-form {
+  gap: 3rem;
+  margin-bottom: 3rem;
+}
+
+.divider::after {
+  content: "";
+  display: block;
+  border-bottom: 4px solid rgba(0, 0, 0, 0.2);
+  width: 10rem;
+  margin: 1rem auto auto auto;
+}
+
+.circle {
+  border-radius: 10rem;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+
+.circle:focus,
+.circle:hover,
+.circle:active {
+  border-radius: 0;
+}
+
+.rotate {
+  -webkit-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+}
+
+.rotate:focus,
+.rotate:hover,
+.rotate:active {
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+
+.scale-up-10 {
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+
+.scale-up-10:focus,
+.scale-up-10:hover,
+.scale-up-10:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.scale-up-30 {
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+
+.scale-up-30:focus,
+.scale-up-30:hover,
+.scale-up-30:active {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+}
+
+.divider-contact::after {
+  border-color: #273a71;
+}
+
+.divider-portfolio::after {
+  border-color: #e5c37f;
+}
+
+.divider-team::after {
+  border-color: #bdd1df;
+}
+
+.divider-skills::after {
+  border-color: #dfe8ed;
+}
+
+@media (max-width: 1200px) {
+  footer,
+  header,
+  section {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .grid-col4 {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 3.2rem;
+  }
+
+  h2 {
+    font-size: 2.4rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  .header {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .grid-col4,
+  .grid-col2,
+  .tab-content {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-testimonials {
+    gap: 5rem;
+  }
+
+  .footer {
+    gap: 3rem;
+  }
+
+  .testimonial {
+    justify-items: center;
+  }
+}
+
+@media (max-width: 425px) {
+  section {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .content-wrapper {
+    gap: 5rem;
+  }
+
+  .link-nav {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  body,
+  .link-footer,
+  ::-webkit-input-placeholder,
+  .testimonial-person-quote {
+    font-size: 1.2rem;
+  }
+
+  body,
+  .link-footer,
+  :-ms-input-placeholder,
+  .testimonial-person-quote {
+    font-size: 1.2rem;
+  }
+
+  body,
+  .link-footer,
+  ::-ms-input-placeholder,
+  .testimonial-person-quote {
+    font-size: 1.2rem;
+  }
+
+  body,
+  .link-footer,
+  ::placeholder,
+  .testimonial-person-quote {
+    font-size: 1.2rem;
+  }
+
+  h1 {
+    font-size: 2.4rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.6rem;
+  }
+
+  button {
+    width: 20rem;
+    font-size: 1.6rem;
+  }
+
+  .header {
+    gap: 3rem;
+  }
+
+  .footer {
+    gap: 1rem;
+  }
+
+  .section-intro,
+  .tab,
+  .portfolio-item-info,
+  .testimonial-person-role {
+    font-size: 1.4rem;
+  }
+}
+</style>
+</head>
+
+
+
+
+
+
+
+
+
+<body>
+<header>
+  <div class="content-wrapper header">
+    <a title="Home" href="#"></a>
+    <nav class="flex">
+      <a class="link-nav" title="Home" href="#">Home</a>
+      <a class="link-nav" title="Services" href="#services">Services</a>
+      <a class="link-nav" title="Team" href="#team">Team</a>
+      <a class="link-nav" title="Skills" href="#skills">Skills</a>
+      <a class="link-nav" title="Portfolio" href="#portfolio">Portfolio</a>
+      <a class="link-nav" title="Testimonials" href="#testimonials">Testimonials</a>
+      <a class="link-nav" title="Contact" href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+
+<main>
+
+<section class="hero">
+  <div class="content-wrapper">
+    <h1>Hi there! We are the new ERA of auto -mobile repairing with technical assistance.</h1>
+    <button class="flex button-orange">Work With Us!</button>
+  </div>
+</section>
+
+<section id="services" class="services">
+<div class="content-wrapper">
+
+<div>
+  <h2 class="divider">Services We Provide</h2>
+  <p class="section-intro">We are working with both individuals and businesses from all over the globe to service automobile and repair services .</p>
+</div>
+
+<div class="grid-col4">
+
+<div>
+  <picture>
+    <source type="image/webp" srcset="https://cuda.iamdanial.com/assets/images/services/service-01.webp">
+    <img loading="lazy" class="rotate" src="https://cuda.iamdanial.com/assets/images/services/service-01.png" alt="Flag" width="120" height="124">
+  </picture>
+
+  <div class="service-item-info-container">
+    <h3>Branding</h3>
+    <p class="service-item-info">We respect our clients with delegate branding and quick assistance </p>
+  </div>
+</div>
+
+<div>
+  <picture>
+    <source type="image/webp" srcset="https://cuda.iamdanial.com/assets/images/services/service-02.webp">
+    <img loading="lazy" class="rotate"src="https://cuda.iamdanial.com/assets/images/services/service-02.png" alt="Crayon" width="90" height="131">
+  </picture>
+
+  <div class="service-item-info-container">
+    <h3>Designing cars </h3>
+    <p class="service-item-info">we provide multiple designs till perfect design suits your car</p>
+  </div>
+</div>
+
+<div>
+  <picture>
+    <source type="image/webp" srcset="https://cuda.iamdanial.com/assets/images/services/service-03.webp">
+    <img loading="lazy" class="rotate" src="https://cuda.iamdanial.com/assets/images/services/service-03.png" alt="Gears" width="159" height="126">
+  </picture>
+
+  <div class="service-item-info-container">
+    <h3>Quick and speed delivery</h3>
+    <p class="service-item-info">We deliver product quick and safer to your door step</p>
+  </div>
+</div>
+
+<div>
+  <picture>
+    <source type="image/webp" srcset="https://cuda.iamdanial.com/assets/images/services/service-04.webp">
+    <img loading="lazy" class="rotate" src="https://cuda.iamdanial.com/assets/images/services/service-04.png" alt="Rocket" width="95" height="134">
+  </picture>
+
+  <div class="service-item-info-container">
+    <h3>we boost your product with our services</h3>
+    <p class="service-item-info">We are there to boost your car and provide good assistance</p>
+  </div>
+</div>
+
+</div>
+</div>
+</section>
+
+<section id="team" class="team">
+<div class="content-wrapper">
+
+<div>
+  <h2 class="divider divider-team">Meet Our Beautiful Team</h2>
+  <p class="section-intro">We are a small team with complete experience on auto mobile .</p>
+</div>
+
+<div class="grid-col4">
+
+<div>
+  <picture>
+    <source type="image/webp" srcset="https://cuda.iamdanial.com/assets/images/team/team-01.webp">
+    <img loading="lazy" class="circle" src="https://cuda.iamdanial.com/assets/images/team/team-01.jpg" alt="Team 01" width="200" height="200">
+  </picture>
+
+  <div class="team-member-bio">
+    <h3>Deena Abbott</h3>
+    <p class="team-member-role">CEO / Auto mobile</p>
+    <p class="team-member-intro">CEO is responsible to make team great and productive with their efforts.</p>
+
+    <div class="flex">
+      <a class="scale-up-30" title="Facebook" href="#"><img loading="lazy" src="https://cuda.iamdanial.com/assets/images/team/social-icons/facebook.svg" alt="Facebook" width="32" height="32"></a>
+      <a class="scale-up-30" title="Twitter" href="#"><img loading="lazy" src="https://cuda.iamdanial.com/assets/images/team/social-icons/twitter.svg" alt="Twitter" width="32" height="32"></a>
+      <a class="scale-up-30" title="LinkedIn" href="#"><img loading="lazy" src="https://cuda.iamdanial.com/assets/images/team/social-icons/linkedin.svg" alt="LinkedIn" width="32" height="32"></a>
+      <a class="scale-up-30" title="Mail" href="#"><img loading="lazy" src="https://cuda.iamdanial.com/assets/images/team/social-icons/mail.svg" alt="Mail" width="32" height="32"></a>
+    </div>
+  </div>
+</div>
+
+<div>
+  <picture>
+    <source type="image/webp" srcset="https://cuda.iamdanial.com/assets/images/team/team-02.webp">
+    <img loading="lazy" class="circle" src="https://cuda.iamdanial.com/assets/images/team/team-02.jpg" alt="Team 02" width="200" height="200">
+  </picture>
+
+  <div class="team-member-bio">
+    <h3>Aurora Coffey</h3>
+    <p class="team-member-role">Creative Director</p>
+    <p class="team-member-intro"> director is responsible to make team quick and fast making proucts and make them to work on deadline basis</p>
+
+    <div class="flex">
+      <a class="scale-up-30" title="Twitter" href="#"><img loading="lazy" src="https://cuda.iamdanial.com/assets/images/team/social-icons/twitter.svg" alt="Twitter" width="32" height="32"></a>
+      <a class="scale-up-30" title="LinkedIn" href="#"><img loading="lazy" src="https://cuda.iamdanial.com/assets/images/team/social-icons/linkedin.svg" alt="LinkedIn" width="32" height="32"></a>
+      <a class="scale-up-30" title="Mail" href="#"><img loading="lazy" src="https://cuda.iamdanial.com/assets/images/team/social-icons/mail.svg" alt="Mail" width="32" height="32"></a>
+    </div>
+  </div>
+</div>
+
+<div>
+  <picture>
+    <source type="image/webp" srcset="https://cuda.iamdanial.com/assets/images/team/team-03.webp">
+    <img loading="lazy" class="circle" src="https://cuda.iamdanial.com/assets/images/team/team-03.jpg" alt="Team 03" width="200" height="200">
+  </picture>
+
+  <div class="team-member-bio">
+    <h3>Katheryn Decker</h3>
+    <p class="team-member-role">Lead car interior designer </p>
+    <p class="team-member-intro">Until our design meets client requirements we are there to provide.</p>
+
+    <div class="flex">
+      <a class="scale-up-30" title="Facebook" href="#"><img loading="lazy" src="https://cuda.iamdanial.com/assets/images/team/social-icons/facebook.svg" alt="Facebook" width="32" height="32"></a>
+      <a class="scale-up-30" title="Twitter" href="#"><img loading="lazy" src="https://cuda.iamdanial.com/assets/images/team/social-icons/twitter.svg" alt="Twitter" width="32" height="32"></a>
+      <a class="scale-up-30" title="LinkedIn" href="#"><img loading="lazy" src="https://cuda.iamdanial.com/assets/images/team/social-icons/linkedin.svg" alt="LinkedIn" width="32" height="32"></a>
+      <a class="scale-up-30" title="Mail" href="#"><img loading="lazy" src="https://cuda.iamdanial.com/assets/images/team/social-icons/mail.svg" alt="Mail" width="32" height="32"></a>
+    </div>
+  </div>
+</div>
+
+<div>
+  <picture>
+    <source type="image/webp" srcset="https://cuda.iamdanial.com/assets/images/team/team-04.webp">
+    <img loading="lazy" class="circle" src="https://cuda.iamdanial.com/assets/images/team/team-04.jpg" alt="Team 04" width="200" height="200">
+  </picture>
+
+  <div class="team-member-bio">
+    <h3>Janell Garcia</h3>
+    <p class="team-member-role">technical assistant</p>
+    <p class="team-member-intro">24/7 our technical assisatnt provides services .</p>
+
+    <div class="flex">
+      <a class="scale-up-30" title="Facebook" href="#"><img loading="lazy" src="https://cuda.iamdanial.com/assets/images/team/social-icons/facebook.svg" alt="Facebook" width="32" height="32"></a>
+      <a class="scale-up-30" title="Twitter" href="#"><img loading="lazy" src="https://cuda.iamdanial.com/assets/images/team/social-icons/twitter.svg" alt="Twitter" width="32" height="32"></a>
+      <a class="scale-up-30" title="Mail" href="#"><img loading="lazy" src="https://cuda.iamdanial.com/assets/images/team/social-icons/mail.svg" alt="Mail" width="32" height="32"></a>
+    </div>
+  </div>
+</div>
+
+</div>
+</div>
+</section>
+
+<section id="skills" class="skills">
+<div class="content-wrapper">
+  
+<div>
+  <h2 class="divider divider-skills">We Got Skills!</h2>
+  <p class="section-intro">We are more constructive and productive with our work with assistance.</p>
+</div>
+
+<div class="grid-col4">
+
+<div>
+  <div class="skill-circle p90 p-blue">
+    <span>90%</span>
+    <div class="slice">
+      <div class="bar"></div>
+      <div class="fill"></div>
+    </div>
+  </div>
+  <h3 class="skill-title">Auto mobile spare repairing</h3>
+</div>
+
+<div>
+  <div class="skill-circle p75 p-pink">
+    <span>75%</span>
+    <div class="slice">
+      <div class="bar"></div>
+      <div class="fill"></div>
+    </div>
+  </div>
+  <h3 class="skill-title">Quick servicing</h3>
+</div>
+
+<div>
+  <div class="skill-circle p70 p-green">
+    <span>70%</span>
+    <div class="slice">
+      <div class="bar"></div>
+      <div class="fill"></div>
+    </div>
+  </div>
+  <h3 class="skill-title">Great and initiative decor inside cars</h3>
+</div>
+
+<div>
+  <div class="skill-circle p85 p-orange">
+    <span>85%</span>
+    <div class="slice">
+      <div class="bar"></div>
+      <div class="fill"></div>
+    </div>
+  </div>
+  <h3 class="skill-title">carburetor technical assistant</h3>
+</div>
+
+</div>
+</div>
+</section>
+
+<section id="portfolio" class="portfolio">
+<div class="content-wrapper">
+
+<div>
+  <h2 class="divider divider-portfolio">Our Portfolio</h2>
+  <p class="section-intro">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet consectetur, adipisci velit, sed quia non numquam</p>
+</div>
+
+<div>
+
+<div class="flex tabs">
+  <h3 class="tab tab-active">All</h3>
+  <h3 class="tab">CAR SPARE</h3>
+  <h3 class="tab">AUTOMOBILE</h3>
+  <h3 class="tab">INTERIOR CAR DESIGNS</h3>
+</div>
+
+<div class="tab-content tab-content-active">
+  <div class="scale-up-10">
+    <picture>
+      <source type="image/webp" srcset="https://cuda.iamdanial.com/assets/images/portfolio/portfolio-01.webp">
+      <img loading="lazy" src="https://cuda.iamdanial.com/assets/images/portfolio/portfolio-01.png" alt="Portfolio 01" width="541" height="311">
+    </picture>
+
+    <h3 class="portfolio-item-info">OUR SERVICES AVAILABLE 24/7</h3>
+  </div>
+
+  <div class="scale-up-10">
+    <picture>
+      <source type="image/webp" srcset="https://cuda.iamdanial.com/assets/images/portfolio/portfolio-02.webp">
+      <img loading="lazy" src="https://cuda.iamdanial.com/assets/images/portfolio/portfolio-02.png" alt="Portfolio 02" width="541" height="311">
+    </picture>
+
+    <h3 class="portfolio-item-info">CAR INTERIOR ASSISATANT  </h3>
+  </div>
+
+  <div class="scale-up-10">
+    <picture>
+      <source type="image/webp" srcset="https://cuda.iamdanial.com/assets/images/portfolio/portfolio-03.webp">
+      <img loading="lazy" src="https://cuda.iamdanial.com/assets/images/portfolio/portfolio-03.png" alt="Portfolio 03" width="541" height="311">
+    </picture>
+
+    <h3 class="portfolio-item-info">SERVICING </h3>
+  </div>
+
+  <div class="scale-up-10">
+    <picture>
+      <source type="image/webp" srcset="https://cuda.iamdanial.com/assets/images/portfolio/portfolio-04.webp">
+      <img loading="lazy" src="https://cuda.iamdanial.com/assets/images/portfolio/portfolio-04.png" alt="Portfolio 04" width="541" height="311">
+    </picture>
+
+    <h3 class="portfolio-item-info">QUICK CARBURETOR SERVICING</h3>
+  </div>
+</div>
+
+<div class="tab-content grid-col1">
+  <div class="scale-up-10">
+    <picture>
+      <source type="image/webp" srcset="https://cuda.iamdanial.com/assets/images/portfolio/portfolio-01.webp">
+      <img loading="lazy" src="https://cuda.iamdanial.com/assets/images/portfolio/portfolio-01.png" alt="Portfolio 01" width="541" height="311">
+    </picture>
+
+    <h3 class="portfolio-item-info">Isometric Perspective Mock-Up</h3>
+  </div>
+</div>
+
+<div class="tab-content">
+  <div class="scale-up-10">
+    <picture>
+      <source type="image/webp" srcset="https://cuda.iamdanial.com/assets/images/portfolio/portfolio-02.webp">
+      <img loading="lazy" src="https://cuda.iamdanial.com/assets/images/portfolio/portfolio-02.png" alt="Portfolio 02" width="541" height="311">
+    </picture>
+
+    <h3 class="portfolio-item-info">Time Zone App UI</h3>
+  </div>
+
+  <div class="scale-up-10">
+    <picture>
+      <source type="image/webp" srcset="https://cuda.iamdanial.com/assets/images/portfolio/portfolio-03.webp">
+      <img loading="lazy" src="https://cuda.iamdanial.com/assets/images/portfolio/portfolio-03.png" alt="Portfolio 03" width="541" height="311">
+    </picture>
+
+    <h3 class="portfolio-item-info">Viro Media Players UI</h3>
+  </div>
+</div>
+
+<div class="tab-content grid-col1">
+  <div class="scale-up-10">
+    <picture>
+      <source type="image/webp" srcset="https://cuda.iamdanial.com/assets/images/portfolio/portfolio-04.webp">
+      <img loading="lazy" src="https://cuda.iamdanial.com/assets/images/portfolio/portfolio-04.png" alt="Portfolio 04" width="541" height="311">
+    </picture>
+
+    <h3 class="portfolio-item-info">Blog / Magazine Flat UI Kit</h3>
+  </div>
+</div>
+
+</div>
+
+<button class="flex button-green">FOR GOOD SERVICE </button>
+
+</div>
+</section>
+
+<section id="testimonials" class="testimonials">
+<div class="content-wrapper">
+
+<div>
+  <h2 class="divider">What People Say About Us</h2>
+  <p class="section-intro">Our clients love us!</p>
+</div>
+
+<div class="grid-col2 grid-testimonials">
+
+<div class="testimonial">
+  <picture>
+    <source type="image/webp" srcset="https://cuda.iamdanial.com/assets/images/testimonials/testimonial-01.webp">
+    <img loading="lazy" class="circle" src="https://cuda.iamdanial.com/assets/images/testimonials/testimonial-01.jpg" alt="Testimonial 01" width="96" height="96">
+  </picture>
+
+  <div class="testimonial-description">
+    <q class="testimonial-person-quote">quick and fast delivery.</q>
+
+    <div class="skill-title">
+      <h3>Twila Jacobson</h3>
+      <p class="testimonial-person-role">OUR CLIENT</p>
+    </div>
+  </div>
+</div>
+
+<div class="testimonial">
+  <picture>
+    <source type="image/webp" srcset="https://cuda.iamdanial.com/assets/images/testimonials/testimonial-02.webp">
+    <img loading="lazy" class="circle" src="https://cuda.iamdanial.com/assets/images/testimonials/testimonial-02.jpg" alt="Testimonial 02" width="96" height="96">
+  </picture>
+
+  <div class="testimonial-description">
+    <q class="testimonial-person-quote">work on deadline basis propaganda .</q>
+
+    <div class="skill-title">
+      <h3>Sarah Moran</h3>
+      <p class="testimonial-person-role">OUR CLIENT</p>
+    </div>
+  </div>
+</div>
+
+<div class="testimonial">
+  <picture>
+    <source type="image/webp" srcset="https://cuda.iamdanial.com/assets/images/testimonials/testimonial-03.webp">
+    <img loading="lazy" class="circle" src="https://cuda.iamdanial.com/assets/images/testimonials/testimonial-03.jpg" alt="Testimonial 03" width="96" height="96">
+  </picture>
+
+  <div class="testimonial-description">
+    <q class="testimonial-person-quote">these interior designs are awesome.</q>
+
+    <div class="skill-title">
+      <h3>Vanessa Lynn</h3>
+      <p class="testimonial-person-role">OUR CLIENT</p>
+    </div>
+  </div>
+</div>
+
+<div class="testimonial">
+  <picture>
+    <source type="image/webp" srcset="https://cuda.iamdanial.com/assets/images/testimonials/testimonial-04.webp">
+    <img loading="lazy" class="circle" src="https://cuda.iamdanial.com/assets/images/testimonials/testimonial-04.jpg" alt="Testimonial 04" width="96" height="96">
+  </picture>
+
+  <div class="testimonial-description">
+    <q class="testimonial-person-quote">This was an great and unique service in automobile .</q>
+
+    <div class="skill-title">
+      <h3>kumar teja</h3>
+      <p class="testimonial-person-role">OUR CLIENT</p>
+    </div>
+  </div>
+</div>
+
+</div>
+</div>
+</section>
+
+<section id="contact" class="contact">
+<div class="content-wrapper">
+
+<div>
+  <h2 class="divider divider-contact">Get In Touch</h2>
+  <p class="section-intro">INBOX INFOTECH PVT, LTD Vadodara,	
+    405-406, Sears Tower Gotri-Sevasi Main Road, Vadodara, Gujarat, India-391101</p>
+</div>
+
+<div>
+<div class="grid-col2 grid-form">
+  <input type="text" required="required" placeholder="Your Name *">
+  <input type="email" required="required" placeholder="Your Email *">
+</div>
+
+<textarea required="required" placeholder="Your Message *"></textarea>
+
+<button class="flex button-aqua-blue">Send Message</button>
+
+</div>
+</div>
+</section>
+</main>
+
+<footer>
+  <div class="content-wrapper footer">
+    <a class="link-footer" title="Facebook" href="#">Facebook</a>
+    <a class="link-footer" title="Twitter" href="#">Twitter</a>
+    <a class="link-footer" title="Google+" href="#">Google+</a>
+    <a class="link-footer" title="LinkedIn" href="#">LinkedIn</a>
+  
+  </div>
+</footer>
+</body>
+</html>
